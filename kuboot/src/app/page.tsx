@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import Link from 'next/link';
+import prisma from '../../lib/prisma';
 
 interface FormValues {
   title: string;

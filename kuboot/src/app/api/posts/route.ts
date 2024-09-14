@@ -9,12 +9,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Title and content are required.' }, { status: 400 });
     }
 
-    const post = await prisma.post.create({
+    const post = await prisma.story.create({
       data: { title, content },
     });
 
     return NextResponse.json({ id: post.id }, { status: 201 });
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to create post.' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to create post.'+ error }, { status: 500 });
   }
 }
