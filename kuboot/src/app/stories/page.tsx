@@ -28,9 +28,9 @@ export default function PostsList({ initialData }: { initialData: Story[] }) {
           {data.map((post) => (
             <li key={post.id} style={{ marginBottom: '1rem' }}>
               <Link href={`/posts/${post.id}`}>
-                <a style={{ fontSize: '1.2rem', color: 'blue', textDecoration: 'underline' }}>
+                {/* <a style={{ fontSize: '1.2rem', color: 'blue', textDecoration: 'underline' }}>
                   {post.title}
-                </a>
+                </a> */}
               </Link>
               <p style={{ fontSize: '0.9rem', color: 'gray' }}>
                 Submitted on: {new Date(post.createdAt).toLocaleString()}

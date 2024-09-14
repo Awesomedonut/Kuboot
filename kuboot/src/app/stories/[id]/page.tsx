@@ -32,7 +32,7 @@ export default function PostPage({ initialData }: { initialData: Post }) {
       </p>
       <div style={{ marginTop: '2rem' }}>
         <Link href="/">
-          <a style={{ color: 'blue', textDecoration: 'underline' }}>Submit Another Story</a>
+          {/* <a style={{ color: 'blue', textDecoration: 'underline' }}>Submit Another Story</a> */}
         </Link>
       </div>
     </div>

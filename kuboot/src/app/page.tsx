@@ -96,7 +96,7 @@ export default function Home() {
 
       <div style={{ marginTop: '2rem' }}>
         <Link href="/posts">
-          <a style={{ color: 'blue', textDecoration: 'underline' }}>View All Stories</a>
+          {/* <a style={{ color: 'blue', textDecoration: 'underline' }}>View All Stories</a> */}
         </Link>
       </div>
     </div>
